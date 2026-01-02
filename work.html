@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reusable Card Grid with Images</title>
+  <!-- Bootstrap CSS CDN -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+</head>
+<body>
+
+<div class="container my-4">
+  <div class="row" id="card-row">
+    <!-- Cards will be inserted here dynamically -->
+     <img src="${card.image}" class="card-img-top h-50" alt="${card.title}">
+
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Array of card data with images
+  const cards = [
+    { 
+      title: 'Rosaaa', 
+      text: 'Shy & Cute smile', 
+      link: '#', 
+      image: 'https://i.pinimg.com/1200x/8b/a3/ed/8ba3ed7f8ad868699d7a1b846cfe5556.jpg'
+    },
+    { 
+      title: 'Rosaaa', 
+      text: 'Warming & Charming', 
+      link: '#', 
+      image: 'https://i.pinimg.com/1200x/ef/0f/b0/ef0fb08587bb0e54f948615800134a91.jpg'
+    },
+    { 
+      title: 'Rosaaa', 
+      text: 'Cute & friendly', 
+      link: '#', 
+      image: 'https://i.pinimg.com/1200x/15/ac/34/15ac34bb8238b5f650a2972cf340bd3e.jpg'
+    },
+    { 
+      title: 'Rosaa', 
+      text: 'Baby girl', 
+      link: '#', 
+      image: 'https://i.pinimg.com/736x/c9/20/da/c920da086f3812d3d5261fb37eed68e3.jpg'
+    }
+  ];
+
+  const cardRow = document.getElementById('card-row');
+
+  cards.forEach(card => {
+    // Create column
+    const col = document.createElement('div');
+    col.className = 'col-md-3 mb-4'; // 4 cards per row on medium screens
+
+    // Create card with image
+    col.innerHTML = `
+      <div class="card h-100">
+        <img src="${card.image}" class="card-img-top min-h-30" alt="${card.title}">
+        <div class="card-body">
+          <h5 class="card-title">${card.title}</h5>
+          <p class="card-text">${card.text}</p>
+          <a href="${card.link}" class="btn btn-primary text-dark">View</a>
+        </div>
+      </div>
+    `;
+
+    // Append column to row
+    cardRow.appendChild(col);
+  });
+</script>
+
+</body>
+</html>
