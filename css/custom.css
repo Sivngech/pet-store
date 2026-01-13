@@ -1,0 +1,171 @@
+:root {
+  --bs-primary: #6bbf59;
+  --bs-primary-rgb: 107, 191, 89;
+
+  --bs-secondary: #2f2f2f;
+  --bs-light: #F0FFDF;
+  --bs-success: #FFD8DF;
+  --bs-sucess-rgb: rgb(255, 216, 223);
+}
+/*Cards */
+.card {
+  background-color: var(--bs-light);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.1s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+/*image size*/
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/*Text */
+.card-title {
+  color: var(--bs-secondary);
+  font-weight: 600;
+}
+
+/*Brand utilities */
+.bg-brand {
+  background-color: var(--bs-primary);
+}
+.text-card {
+  color: var(--bs-success);
+}
+.text-brand {
+  color: var(--bs-primary);
+}
+
+/*Navbar */
+/* .navbar-nav.nav-link.active {
+  color:#6bbf59;
+;
+} */
+
+.navbar-nav .nav-link.active, .nav-link:hover {
+  color: #6bbf59;
+}
+.navbar input {
+  border-radius: 20px;
+}
+
+.navbar input:focus {
+  box-shadow: none;
+}
+
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  border-radius: 999px;   /* pill style */
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-light {
+  background-color: var(--bs-light);
+  border-color: var(--bs-light);
+  border-radius: 999px;   /* pill style */
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5aa94d; /* darker green */
+  border-color: #5aa94d;
+  transform: translateY(-2px);
+}
+/*banner*/
+.home-banner {
+  min-height: 100vh; 
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("../assets/ban-poppy.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* footer */
+
+footer .nav-link.active,
+footer .nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/*contact page style*/
+/* contact page style */
+.contact-page {
+  background: url("/assets/store.jpg") center / cover no-repeat;
+  min-height: 100vh;
+}
+
+/* Glass card */
+.contact-card {
+  background: var(--bs-primary);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  color: #fff;
+}
+
+/* Titles */
+.contact-card h3 {
+  font-weight: 600;
+}
+
+/* Contact info list */
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.contact-info i {
+  width: 36px;
+  height: 36px;
+  background: var(--bs-primary);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Inputs */
+.contact-input {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.contact-input::placeholder {
+  color: #eaeaea;
+}
+
+.contact-input:focus {
+  background:white;
+  box-shadow: none;
+  color: var(--bs-primary);
+}
+
+/* Title underline */
+.title-line {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--bs-success);
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
