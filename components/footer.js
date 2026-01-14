@@ -8,14 +8,14 @@ class Footer extends HTMLElement {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       <link rel="stylesheet" href="css/custom.css">
     </head>
-    <footer class="bg-primary border-top mt-5 text-dark">
+    <footer class="bg-primary bg-primary border-top pt-5 text-dark">
   <div class="container py-5">
 
     <div class="row align-items-start text-center text-md-start">
 
       <!-- Logo -->
       <div class="col-12 col-md-3 mb-4 mb-md-0">
-        <a href="#" class="text-decoration-none d-inline-flex align-items-center gap-2">
+        <a href="/index.html" class="text-decoration-none d-inline-flex align-items-center gap-2">
           <img src="assets/pet-logo.jpg" alt="logo" class="rounded-circle" width="56" height="56">
           <span class="fw-bold text-white">Pet Store</span>
         </a>
@@ -53,7 +53,7 @@ class Footer extends HTMLElement {
                 <a class="nav-link text-dark nav-page" href="#">Accessories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark nav-page" href="#">Contact</a>
+                <a class="nav-link text-dark nav-page" href="/contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -79,9 +79,7 @@ class Footer extends HTMLElement {
         <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
       </div>
-
     </div>
-
   </div>
 </footer>
 

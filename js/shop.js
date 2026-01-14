@@ -1,23 +1,27 @@
 const pugs = [
   {
+    id: 1,
     img: 'assets/products/p-3.jpg',
     title: 'Pug',
     description: 'Soft and warm puppy',
     price: '10$'
   },
   {
+    id: 2,
     img: 'assets/products/p-1.jpg',
     title: 'Pug',
     description: 'Smart puppy pug',
     price: '16$',
   },
   {
+    id: 3,
     img: 'assets/products/p-4.jpg',
     title: 'Pug',
     description: 'Best dog in the world',
     price: '14$'
   },
   {
+    id: 4,
     img: 'assets/products/p-5.jpg',
     title: 'Pug',
     description: 'Smart and helpful',
@@ -44,6 +48,7 @@ for (let i = 0; i < pugs.length; i++) {
       <div class="mt-auto text-end">
         <button 
           class="btn btn-primary text-card add-to-cart"
+          data-id="${pugs[i].id}"
           data-title="${pugs[i].title}"
           data-price="${pugs[i].price}"
           data-img="${pugs[i].img}"
@@ -62,24 +67,28 @@ document.getElementById("pug").innerHTML = pug;
 
 const poms = [
   {
+    id: 5,
     img: 'assets/products/pom-1.jpg',
     title: 'Pomskey',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
+    id: 6,
     img: 'assets/products/chihuahua-1.jpg',
     title: 'Chihuahua',
     description: 'Best dog in the world',
     price: '10$'
   },
-  {
+  { 
+    id: 7,
     img: 'assets/products/husky-1.jpg',
     title: 'Pomskey',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
+    id: 8,
     img: 'assets/products/beagle-2.jpg',
     title: 'Dachshund',
     description: 'Small dog',
@@ -106,6 +115,7 @@ for (let i = 0; i < poms.length; i++) {
       <div class="mt-auto text-end">
         <button 
           class="btn btn-primary text-card add-to-cart"
+          data-id="${poms[i].id}"
           data-title="${poms[i].title}"
           data-price="${poms[i].price}"
           data-img="${poms[i].img}"
@@ -123,24 +133,28 @@ document.getElementById("pom").innerHTML = pom;
 
 const schnoodles = [
   {
+    id: 9,
     img: 'assets/products/s-1.jpg',
     title: 'title',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
+    id: 10,
     img: 'assets/products/s-2.jpg',
     title: 'title',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
+    id: 11,
     img: 'assets/products/s-3.jpg',
     title: 'title',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
+    id: 12,
     img: 'assets/products/s-4.jpg',
     title: 'title',
     description: 'Best dog in the world',
@@ -167,6 +181,7 @@ for ( let i = 0; i < schnoodles.length; i++) {
       <div class="mt-auto text-end">
         <button 
           class="btn btn-primary text-card add-to-cart"
+          data-id="${schnoodles[i].id}"
           data-title="${schnoodles[i].title}"
           data-price="${schnoodles[i].price}"
           data-img="${schnoodles[i].img}"
@@ -185,72 +200,84 @@ document.getElementById("schno").innerHTML = schno;
 
 const toys = [
   {
+    id: 13,
     img: 'assets/toys/t-1.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 14,
     img: 'assets/toys/t-2.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 15,
     img: 'assets/toys/t-3.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 16,
     img: 'assets/toys/t-4.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
-   {
+  {
+    id: 17,
     img: 'assets/toys/k-1.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 18,
     img: 'assets/toys/k-2.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 19,
     img: 'assets/toys/k-3.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 29,
     img: 'assets/toys/k-4.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 30,
     img: 'assets/toys/ball-1.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 31,
     img: 'assets/toys/ball-2.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 32,
     img: 'assets/toys/ball-3.jpg',
     title: 'Toy',
     description: 'cute toy',
     price: '20$'
   },
   {
+    id: 33,
     img: 'assets/toys/ball-4.jpg',
     title: 'Toy',
     description: 'cute toy',
@@ -278,6 +305,7 @@ for (let i = 0; i <toys.length; i++) {
       <div class="mt-auto text-end">
         <button 
           class="btn btn-primary text-card add-to-cart"
+          data-id="${toys[i].id}"
           data-title="${toys[i].title}"
           data-price="${toys[i].price}"
           data-img="${toys[i].img}"

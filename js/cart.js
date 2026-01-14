@@ -10,16 +10,17 @@ document.addEventListener("click", function (e) {
   const btn = e.target.closest(".add-to-cart");
   if (!btn) return;
 
+  const id = btn.dataset.id;
   const title = btn.dataset.title;
   const price = parseFloat(btn.dataset.price.replace("$", ""));
   const img = btn.dataset.img;
 
-  const existingItem = cartItems.find(item => item.title === title);
+  const existingItem = cartItems.find(item => item.id == id);
 
   if (existingItem) {
     existingItem.qty++;
   } else {
-    cartItems.push({ title, price, img, qty: 1 });
+    cartItems.push({ id, title, price, img, qty: 1 });
   }
 
   cartCount++;
@@ -27,7 +28,7 @@ document.addEventListener("click", function (e) {
 });
 
 /* =====================
-   UPDATE UI
+   UPDATE CART UI
 ===================== */
 function updateCartUI() {
   const mobileBadge = document.getElementById("cartBadgeMobile");
@@ -36,7 +37,7 @@ function updateCartUI() {
   const emptyMsg = document.getElementById("emptyCartMsg");
   const totalEl = document.getElementById("cartTotal");
 
-  if (!cartList) return; // prevent errors on pages without cart
+  if (!cartList) return; // prevent errors if cart modal not on page
 
   cartList.innerHTML = "";
 
@@ -53,7 +54,7 @@ function updateCartUI() {
   let totalQty = 0;
   let totalPrice = 0;
 
-  cartItems.forEach((item, index) => {
+  cartItems.forEach(item => {
     totalQty += item.qty;
     totalPrice += item.price * item.qty;
 
@@ -67,12 +68,12 @@ function updateCartUI() {
         </div>
 
         <div class="d-flex align-items-center gap-2">
-          <button class="btn btn-sm btn-outline-secondary qty-minus" data-index="${index}">−</button>
+          <button class="btn btn-sm btn-outline-secondary qty-minus" data-id="${item.id}">−</button>
           <span>${item.qty}</span>
-          <button class="btn btn-sm btn-outline-secondary qty-plus" data-index="${index}">+</button>
+          <button class="btn btn-sm btn-outline-secondary qty-plus" data-id="${item.id}">+</button>
         </div>
 
-        <button class="btn btn-sm btn-outline-danger remove-item" data-index="${index}">
+        <button class="btn btn-sm btn-outline-danger remove-item" data-id="${item.id}">
           <i class="fas fa-trash"></i>
         </button>
       </li>
@@ -88,31 +89,36 @@ function updateCartUI() {
    PLUS / MINUS / DELETE
 ===================== */
 document.addEventListener("click", function (e) {
+  const id = e.target.dataset.id || e.target.closest(".remove-item")?.dataset.id;
+  if (!id) return;
 
+  const itemIndex = cartItems.findIndex(item => item.id == id);
+  if (itemIndex === -1) return;
+
+  const item = cartItems[itemIndex];
+
+  // PLUS
   if (e.target.classList.contains("qty-plus")) {
-    const index = e.target.dataset.index;
-    cartItems[index].qty++;
+    item.qty++;
     cartCount++;
-    updateCartUI();
   }
 
+  // MINUS
   if (e.target.classList.contains("qty-minus")) {
-    const index = e.target.dataset.index;
-    cartItems[index].qty--;
+    item.qty--;
     cartCount--;
-
-    if (cartItems[index].qty === 0) {
-      cartItems.splice(index, 1);
+    if (item.qty <= 0) {
+      cartItems.splice(itemIndex, 1);
     }
-    updateCartUI();
   }
 
+  // DELETE
   if (e.target.closest(".remove-item")) {
-    const index = e.target.closest(".remove-item").dataset.index;
-    cartCount -= cartItems[index].qty;
-    cartItems.splice(index, 1);
-    updateCartUI();
+    cartCount -= item.qty;
+    cartItems.splice(itemIndex, 1);
   }
+
+  updateCartUI();
 });
 
 /* =====================
@@ -147,7 +153,5 @@ document.addEventListener("click", function (e) {
   cartCount = 0;
   updateCartUI();
 
-  bootstrap.Modal.getInstance(
-    document.getElementById("cartModal")
-  )?.hide();
+  bootstrap.Modal.getInstance(document.getElementById("cartModal"))?.hide();
 });

@@ -44,10 +44,6 @@
 }
 
 /*Navbar */
-/* .navbar-nav.nav-link.active {
-  color:#6bbf59;
-;
-} */
 
 .navbar-nav .nav-link.active, .nav-link:hover {
   color: #6bbf59;
@@ -87,8 +83,8 @@
 .home-banner {
   min-height: 100vh; 
   background-image:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("../assets/ban-poppy.jpg"); 
+  linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../assets/ban-poppy.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,71 +97,127 @@ footer .nav-link:hover {
   text-decoration: none;
 }
 
-/*contact page style*/
-/* contact page style */
-.contact-page {
+/* Left image block */
+.contact-us , .welcome{
+  animation: titlePulse 1.6s ease-in-out infinite;
+}
+@keyframes titlePulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
+
+.title-line {
+  display: block;
+  height: 4px;
+  background: #6fbf5f;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  width: 60px;
+  animation: lineGrow 1.2s ease infinite;
+  animation-delay: 0.3s;
+
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+.contact-image {
   background: url("/assets/store.jpg") center / cover no-repeat;
-  min-height: 100vh;
-}
-
-/* Glass card */
-.contact-card {
-  background: var(--bs-primary);
-  backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 30px;
-  color: #fff;
+  min-height: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.contact-image {
+  transition: transform 0.4s ease;
 }
 
-/* Titles */
-.contact-card h3 {
-  font-weight: 600;
+.contact-image:hover {
+  transform: scale(1.02);
+}
+@media (max-width: 991px) {
+  .contact-image {
+    min-height: 300px;
+  }
 }
 
-/* Contact info list */
-.contact-info li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 18px;
-  font-size: 15px;
+
+/*food style*/
+.food-hero {
+  background: #f7fdf8;
 }
 
-.contact-info i {
-  width: 36px;
-  height: 36px;
+.title-line {
+  display: block;
+  width: 70px;
+  height: 4px;
   background: var(--bs-primary);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.price-tag {
+  background: var(--bs-primary);
   color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
   font-size: 14px;
 }
 
-/* Inputs */
-.contact-input {
-  background: rgba(255, 255, 255, 0.15);
-  border: none;
-  color: #fff;
-  border-radius: 12px;
+.card {
+  transition: all 0.25s ease;
 }
 
-.contact-input::placeholder {
-  color: #eaeaea;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
 
-.contact-input:focus {
-  background:white;
-  box-shadow: none;
-  color: var(--bs-primary);
+.card img {
+  transition: transform 0.3s ease;
 }
 
-/* Title underline */
-.title-line {
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: var(--bs-success);
-  margin: 10px auto 0;
-  border-radius: 10px;
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.btn-light {
+  color: black;
+}
+
+.food-section {
+    transition: all 0.3s ease-in-out;
+}
+/* Default filter button */
+.filter-btn {
+    transition: all 0.25s ease-in-out;
+}
+
+/* Hover effect (like All Product style) */
+.filter-btn:hover {
+    background-color: #f8f9fa; /* bg-light */
+    color: #212529;           /* text-dark */
+    border-color: #f8f9fa;
+}
+
+/* Keep active button style */
+.filter-btn.btn-primary:hover {
+    background-color: var(--bs-primary); /* Bootstrap primary */
+    color: #fff;
+}
+.filter-btn:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
 }

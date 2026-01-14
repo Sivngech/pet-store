@@ -16,7 +16,7 @@
   <main class="flex-grow-1" style="margin-top: 50px;">
     <section class="home-banner d-flex align-items-center">
       <div class="container text-center text-white">
-        <h1 class="fw-bold">Welcome to Our Pet Store 🐾</h1>
+        <h1 class="fw-bold welcome">Welcome to Our Pet Store 🐾</h1>
         <p class="lead">Cute pets, fun toys, and everything your pet loves</p>
         <a href="/shop.html" class="btn btn-primary text-card btn-lg mt-3">
           Shop Now
@@ -59,20 +59,16 @@
   <div class="modal fade" id="cartModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-
         <div class="modal-header">
           <h5 class="modal-title">Shopping Cart</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-
         <div class="modal-body">
           <p class="text-center text-muted d-none" id="emptyCartMsg">
             Your cart is empty
           </p>
           <ul class="list-group" id="cartItems"></ul>
         </div>
-
-
         <div class="modal-footer">
           <strong>Total: <span id="cartTotal">$0</span></strong>
           <button class="btn btn-primary text-card ms-auto" id="purchaseBtn">
