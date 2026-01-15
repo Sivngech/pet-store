@@ -102,7 +102,7 @@ for (let i = 0; i < poms.length; i++) {
   pom += `
 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
   <div class="card rounded-3 overflow-hidden h-100 position-relative">
-    <img src="${poms[i].img}" class="card-img-top" alt="toy">
+    <img src="${poms[i].img}" class="card-img-top" alt="dog">
     <span class="position-absolute top-0 end-0 m-2 
                  bg-primary text-card px-2 py-1 rounded-pill">
       ${poms[i].price}
@@ -168,7 +168,7 @@ for ( let i = 0; i < schnoodles.length; i++) {
   schno += `
 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
   <div class="card rounded-3 overflow-hidden h-100 position-relative">
-    <img src="${schnoodles[i].img}" class="card-img-top" alt="toy">
+    <img src="${schnoodles[i].img}" class="card-img-top" alt="dog">
     <span class="position-absolute top-0 end-0 m-2 
                  bg-primary text-card px-2 py-1 rounded-pill">
       ${schnoodles[i].price}
@@ -197,6 +197,207 @@ for ( let i = 0; i < schnoodles.length; i++) {
 };
 
 document.getElementById("schno").innerHTML = schno;
+
+const ragdolls = [
+  {
+    id: 34,
+    img: 'assets/cats/rag-1.jpg',
+    title: 'Ragedoll',
+    description: 'Soft and cute',
+    price: '30$'
+  },
+  {
+    id: 35,
+    img: 'assets/cats/rag-2.png',
+    title: 'Ragedoll',
+    description: 'Charming cat',
+    price: '45$'
+  },
+  {
+    id: 36,
+    img: 'assets/cats/rag-3.jpg',
+    title: 'Ragedoll',
+    description: 'Smart cat',
+    price: '25$'
+  },
+  {
+    id: 37,
+    img: 'assets/cats/rag-4.jpg',
+    title: 'Ragedoll',
+    description: 'Kind and friendly',
+    price: '65$'
+  }
+];
+
+let ragdoll = '';
+
+for (let i = 0; i < ragdolls.length; i++) {
+  ragdoll += `
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+  <div class="card rounded-3 overflow-hidden h-100 position-relative">
+    <img src="${ragdolls[i].img}" class="card-img-top" alt="cat">
+    <span class="position-absolute top-0 end-0 m-2 
+                 bg-primary text-card px-2 py-1 rounded-pill">
+      ${ragdolls[i].price}
+    </span>
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title mb-1">${ragdolls[i].title}</h5>
+      <p class="card-text text-muted line-clamp">
+        ${ragdolls[i].description}
+      </p>
+      <div class="mt-auto text-end">
+        <button 
+          class="btn btn-primary text-card add-to-cart"
+          data-id="${ragdolls[i].id}"
+          data-title="${ragdolls[i].title}"
+          data-price="${ragdolls[i].price}"
+          data-img="${ragdolls[i].img}"
+        >
+          Add to cart
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+};
+
+document.getElementById("ragdoll").innerHTML = ragdoll;
+
+const japaneses = [
+  {
+    id: 38,
+    img: 'assets/cats/ja-1.jpg',
+    title: 'Japanese Bobtail',
+    description: 'Soft and cute',
+    price: '50$'
+  },
+  {
+    id: 39,
+    img: 'assets/cats/ja-2.jpg',
+    title: 'Japanese Bobtail',
+    description: 'Charming cat',
+    price: '78$'
+  },
+  {
+    id: 40,
+    img: 'assets/cats/ja-3.jpg',
+    title: 'Japanese Bobtail',
+    description: 'Smart cat',
+    price: '25$'
+  },
+  {
+    id: 41,
+    img: 'assets/cats/ja-4.jpg',
+    title: 'Japanese Bobtail',
+    description: 'Kind and friendly',
+    price: '65$'
+  }
+];
+
+let japanese = '';
+
+for (let i = 0; i < japaneses.length; i++) {
+  japanese += `
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+  <div class="card rounded-3 overflow-hidden h-100 position-relative">
+    <img src="${japaneses[i].img}" class="card-img-top" alt="cat">
+    <span class="position-absolute top-0 end-0 m-2 
+                 bg-primary text-card px-2 py-1 rounded-pill">
+      ${japaneses[i].price}
+    </span>
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title mb-1">${japaneses[i].title}</h5>
+      <p class="card-text text-muted line-clamp">
+        ${japaneses[i].description}
+      </p>
+      <div class="mt-auto text-end">
+        <button 
+          class="btn btn-primary text-card add-to-cart"
+          data-id="${japaneses[i].id}"
+          data-title="${japaneses[i].title}"
+          data-price="${japaneses[i].price}"
+          data-img="${japaneses[i].img}"
+        >
+          Add to cart
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+};
+
+document.getElementById("japanese").innerHTML = japanese;
+
+const americants = [
+  {
+    id: 42,
+    img: 'assets/cats/am-1.jpg',
+    title: 'Americant Curl',
+    description: 'Soft and cute',
+    price: '60$'
+  },
+  {
+    id: 43,
+    img: 'assets/cats/am-2.jpg',
+    title: 'Americant Curl',
+    description: 'Charming cat',
+    price: '88$'
+  },
+  {
+    id: 44,
+    img: 'assets/cats/am-3.jpg',
+    title: 'Americant Curl',
+    description: 'Smart cat',
+    price: '125$'
+  },
+  {
+    id: 45,
+    img: 'assets/cats/am-4.jpg',
+    title: 'Americant Curl',
+    description: 'Kind and friendly',
+    price: '65$'
+  }
+];
+
+let americant = '';
+
+for (let i = 0; i < americants.length; i++) {
+  americant += `
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+  <div class="card rounded-3 overflow-hidden h-100 position-relative">
+    <img src="${americants[i].img}" class="card-img-top" alt="cat">
+    <span class="position-absolute top-0 end-0 m-2 
+                 bg-primary text-card px-2 py-1 rounded-pill">
+      ${americants[i].price}
+    </span>
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title mb-1">${americants[i].title}</h5>
+      <p class="card-text text-muted line-clamp">
+        ${americants[i].description}
+      </p>
+      <div class="mt-auto text-end">
+        <button 
+          class="btn btn-primary text-card add-to-cart"
+          data-id="${americants[i].id}"
+          data-title="${americants[i].title}"
+          data-price="${americants[i].price}"
+          data-img="${americants[i].img}"
+        >
+          Add to cart
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+};
+
+document.getElementById("americant").innerHTML = americant;
 
 const toys = [
   {
