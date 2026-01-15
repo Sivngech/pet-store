@@ -137,9 +137,10 @@ footer .nav-link:hover {
 .contact-image {
   background: url("../assets/store.jpg") center / cover no-repeat;
   border-radius: 20px;
-  min-height: 100%;
+  min-height: 350px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
+
 .contact-image {
   transition: transform 0.4s ease;
 }
