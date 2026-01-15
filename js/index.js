@@ -31,7 +31,7 @@ const dogs = [
   {
     id: 17,
     img: 'assets/cats/am-1.jpg',
-    title: 'American burl',
+    title: 'American curl',
     description: 'Soft and cute',
     price: '30$'
   },
@@ -100,35 +100,35 @@ const products = [
     img: 'assets/toys/t-1.jpg',
     title: 'Toy',
     description: 'cute toy',
-    price: '30$'
+    price: '10$'
   },
   {
     id: 6,
     img: 'assets/toys/t-2.jpg',
     title: 'Toy',
     description: 'cute toy',
-    price: '20$'
+    price: '8$'
   },
   {
     id: 7,
     img: 'assets/toys/t-3.jpg',
     title: 'Toy',
     description: 'cute toy',
-    price: '40$'
+    price: '7$'
   },
   {
     id: 8,
     img: 'assets/toys/t-4.jpg',
     title: 'Toy',
     description: 'cute toy',
-    price: '15$'
+    price: '9$'
   },
   {
     id: 9,
     img: 'assets/toys/ac-1.jpg',
     title: 'Collar',
     description: 'Colorful Collar easy to use with your pet.',
-    price: '22$'
+    price: '12$'
   },
   {
     id: 10,
@@ -142,14 +142,14 @@ const products = [
     img: 'assets/toys/ac-3.jpg',
     title: 'Leash',
     description: 'Can bring your dog anywhere with it.',
-    price: '30$'
+    price: '15$'
   },
   {
     id: 12,
     img: 'assets/toys/ac-4.jpg',
     title: 'Leash',
     description: 'Casual and clean.',
-    price: '40$'
+    price: '11$'
   }
 ];
 
@@ -160,7 +160,7 @@ for (let i = 0; i < products.length; i++) {
   product += `
 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
   <div class="card rounded-3 overflow-hidden h-100 position-relative">
-    <img src="${products[i].img}" class="card-img-top" alt="toy">
+    <img src="${products[i].img}" class="card-img-top" alt="product">
     <span class="position-absolute top-0 end-0 m-2 
                  bg-primary text-card px-2 py-1 rounded-pill">
       ${products[i].price}
@@ -201,9 +201,9 @@ const foods = [
   },
   {
     id: 14,
-    img: 'assets/food/food-2.jpg',
+    img: 'assets/food/food-8.jpg',
     title: 'Food',
-    description: 'Dry pet food, dog and cat can eat.',
+    description: 'Wet dog food',
     price: '15$'
   },
   {
@@ -222,8 +222,8 @@ const foods = [
   },
   {
     id: 17,
-    img: 'assets/cats/c-1.jpg',
-    title: 'Dry food',
+    img: 'assets/cats/w-1.jpg',
+    title: 'Wet food',
     description: 'Favourite food of cat',
     price: '14$'
   },
@@ -257,7 +257,7 @@ for (let i = 0; i < foods.length; i++) {
   food += `
 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
   <div class="card rounded-3 overflow-hidden h-100 position-relative">
-    <img src="${foods[i].img}" class="card-img-top" alt="toy">
+    <img src="${foods[i].img}" class="card-img-top" alt="food">
     <span class="position-absolute top-0 end-0 m-2 
                  bg-primary text-card px-2 py-1 rounded-pill">
       ${foods[i].price}
