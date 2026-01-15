@@ -44,6 +44,30 @@
         </div>
     </main>
     <footer-component></footer-component>
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center text-muted d-none" id="emptyCartMsg">
+                        Your cart is empty
+                    </p>
+                    <ul class="list-group" id="cartItems"></ul>
+                </div>
+                <div class="modal-footer">
+                    <strong>Total: <span id="cartTotal">$0</span></strong>
+                    <button class="btn btn-primary text-card ms-auto" id="purchaseBtn">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
