@@ -285,6 +285,8 @@ for (let i = 0; i < foods.length; i++) {
 };
 
 document.getElementById("food").innerHTML = food;
+
+
 /**
  * product bought console
  */

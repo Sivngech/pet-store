@@ -219,3 +219,16 @@ footer .nav-link:hover {
     cursor: pointer;
     transform: translateY(-1px);
 }
+
+/*shop style*/
+/* Only if you need to override the standard blue with your brand color */
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: var(--bs-light) !important; /* Forces text to light on hover */
+}
