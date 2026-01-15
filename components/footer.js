@@ -50,7 +50,7 @@ class Footer extends HTMLElement {
           <div class="col-6 col-md-4">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link text-dark nav-page" href="#">Accessories</a>
+                <a class="nav-link text-dark nav-page" href="accessories.html">Accessories</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark nav-page" href="contact.html">Contact</a>
