@@ -28,10 +28,10 @@ class Footer extends HTMLElement {
           <div class="col-6 col-md-4 mb-3 mb-md-0">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link text-dark nav-page" href="/index.html">Home</a>
+                <a class="nav-link text-dark nav-page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark nav-page" href="/about-us.html">About Us</a>
+                <a class="nav-link text-dark nav-page" href="about-us.html">About Us</a>
               </li>
             </ul>
           </div>
@@ -39,10 +39,10 @@ class Footer extends HTMLElement {
           <div class="col-6 col-md-4 mb-3 mb-md-0">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link text-dark nav-page" href="/shop.html">Shop</a>
+                <a class="nav-link text-dark nav-page" href="shop.html">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark nav-page" href="#">Food</a>
+                <a class="nav-link text-dark nav-page" href="food.html">Food</a>
               </li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ class Footer extends HTMLElement {
                 <a class="nav-link text-dark nav-page" href="#">Accessories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark nav-page" href="/contact.html">Contact</a>
+                <a class="nav-link text-dark nav-page" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
