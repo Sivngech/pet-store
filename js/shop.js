@@ -389,8 +389,8 @@ for (let i = 0; i < americants.length; i++) {
         >
           Add to cart
         </button>
-
       </div>
+
     </div>
   </div>
 </div>

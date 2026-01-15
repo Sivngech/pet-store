@@ -60,7 +60,7 @@
 .btn-primary {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
-  border-radius: 999px;   /* pill style */
+  border-radius: 999px;  
   padding: 8px 20px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -68,14 +68,14 @@
 .btn-light {
   background-color: var(--bs-light);
   border-color: var(--bs-light);
-  border-radius: 999px;   /* pill style */
+  border-radius: 999px;
   padding: 8px 20px;
   font-weight: 500;
   transition: all 0.4s ease;
 }
 
 .btn-primary:hover {
-  background-color: #5aa94d; /* darker green */
+  background-color: #5aa94d; 
   border-color: #5aa94d;
   transform: translateY(-2px);
 }
@@ -201,21 +201,18 @@ footer .nav-link:hover {
 .food-section {
     transition: all 0.3s ease-in-out;
 }
-/* Default filter button */
 .filter-btn {
     transition: all 0.25s ease-in-out;
 }
 
-/* Hover effect (like All Product style) */
 .filter-btn:hover {
-    background-color: #f8f9fa; /* bg-light */
-    color: #212529;           /* text-dark */
+    background-color: #f8f9fa; 
+    color: #212529;           
     border-color: #f8f9fa;
 }
 
-/* Keep active button style */
 .filter-btn.btn-primary:hover {
-    background-color: var(--bs-primary); /* Bootstrap primary */
+    background-color: var(--bs-primary);
     color: #fff;
 }
 .filter-btn:hover {
