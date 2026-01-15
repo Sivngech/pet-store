@@ -17,7 +17,7 @@ const dogs = [
   { 
     id: 3, 
     img: 'assets/products/pom-1.jpg', 
-    title: 'Pomskey', 
+    title: 'Pomsky', 
     description: 'Smart and helpful', 
     price: '50$' 
   },
@@ -38,7 +38,7 @@ const dogs = [
   {
     id: 18,
     img: 'assets/cats/rag-1.jpg',
-    title: 'Ragedoll',
+    title: 'Ragdoll',
     description: 'Charming cat',
     price: '45$'
   },

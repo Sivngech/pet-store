@@ -202,28 +202,28 @@ const ragdolls = [
   {
     id: 34,
     img: 'assets/cats/rag-1.jpg',
-    title: 'Ragedoll',
+    title: 'Ragdoll',
     description: 'Soft and cute',
     price: '30$'
   },
   {
     id: 35,
     img: 'assets/cats/rag-2.png',
-    title: 'Ragedoll',
+    title: 'Ragdoll',
     description: 'Charming cat',
     price: '45$'
   },
   {
     id: 36,
     img: 'assets/cats/rag-3.jpg',
-    title: 'Ragedoll',
+    title: 'Ragdoll',
     description: 'Smart cat',
     price: '25$'
   },
   {
     id: 37,
     img: 'assets/cats/rag-4.jpg',
-    title: 'Ragedoll',
+    title: 'Ragdoll',
     description: 'Kind and friendly',
     price: '65$'
   }
@@ -336,28 +336,28 @@ const americants = [
   {
     id: 42,
     img: 'assets/cats/am-1.jpg',
-    title: 'Americant Curl',
+    title: 'American Curl',
     description: 'Soft and cute',
     price: '60$'
   },
   {
     id: 43,
     img: 'assets/cats/am-2.jpg',
-    title: 'Americant Curl',
+    title: 'American Curl',
     description: 'Charming cat',
     price: '88$'
   },
   {
     id: 44,
     img: 'assets/cats/am-3.jpg',
-    title: 'Americant Curl',
+    title: 'American Curl',
     description: 'Smart cat',
     price: '125$'
   },
   {
     id: 45,
     img: 'assets/cats/am-4.jpg',
-    title: 'Americant Curl',
+    title: 'American Curl',
     description: 'Kind and friendly',
     price: '65$'
   }
