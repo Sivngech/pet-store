@@ -4,102 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Food</title>
-
-    <!-- Bootstrap -->
+    <title>Pet Food for Dogs & Cats | Healthy & Nutritious Meals – Happy Paws</title>
+    <meta name="description"
+        content="Buy healthy and nutritious pet food for dogs and cats at Happy Paws Pet Store. Made with quality ingredients to support digestion, energy, and overall pet health.">
+    <meta name="keywords"
+        content="pet food, dog food, cat food, healthy pet food, premium pet food, puppy food, kitten food, nutritious pet meals, pet food store Cambodia, buy pet food online">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-
     <link rel="icon" href="assets/pet-logo.jpg" type="image/jpeg">
 </head>
 
 <body>
-
-    <!-- HEADER -->
     <header-component></header-component>
-
     <main class="pt-5">
-
-        <!-- HERO SECTION -->
         <section class="food-hero text-center py-5">
             <h1 class="fw-bold text-primary">Premium Pet Food</h1>
             <p class="text-muted">
-                Carefully selected nutrition to support your pet’s health, energy, and happiness.
+                Carefully selected nutrition to support your pet's health, energy, and happiness.
             </p>
             <span class="title-line"></span>
         </section>
-
-        <!-- FILTER SECTION -->
         <section class="container text-center mb-4">
-            <button class="btn btn-primary btn-lg mt-3 text-dark border-primary rounded-pill filter-btn" data-filter="all">
+            <button class="btn btn-primary btn-lg mt-3 text-dark border-primary rounded-pill filter-btn"
+                data-filter="all">
                 All Products
             </button>
-            <button class="btn btn-outline-primary text-dark border-primary btn-lg mt-3 rounded-pill filter-btn" data-filter="dog">
+            <button class="btn btn-outline-primary text-dark border-primary btn-lg mt-3 rounded-pill filter-btn"
+                data-filter="dog">
                 Dog Food
             </button>
-            <button class="btn btn-outline-primary btn-lg mt-3 text-dark border-primary rounded-pill filter-btn" data-filter="cat">
+            <button class="btn btn-outline-primary btn-lg mt-3 text-dark border-primary rounded-pill filter-btn"
+                data-filter="cat">
                 Cat Food
             </button>
         </section>
-
         <section id="all-section" class="container pb-5">
-
-            <!-- DOG FOOD -->
             <div id="dog-section" class="food-section dog mt-5">
                 <p class="h3 mb-4 text-brand">Dog Food</p>
                 <div id="dogFood" class="row g-4"></div>
             </div>
-
-            <!-- CAT FOOD -->
             <div id="cat-section" class="food-section cat mt-5">
                 <p class="h3 mb-4 text-brand">Cat Food</p>
                 <div id="catFood" class="row g-4"></div>
             </div>
-
         </section>
-
-
-        <!-- TRUST SECTION -->
         <section class="bg-light py-5">
             <div class="container">
                 <div class="row text-center g-4 justify-content-center">
-
                     <div class="col-12 col-md-4">
-                        🥩
+                        <img src="assets/food-logo.jpg" alt="High-quality pet food ingredients" width="80" height="80"
+                            class="rounded-pill">
                         <h6 class="fw-semibold mt-2">Quality Ingredients</h6>
                         <p class="text-muted small">
-                            Carefully selected ingredients to ensure safety, nutrition, and consistent quality.
+                            Made with carefully selected, high-quality ingredients to provide balanced nutrition and
+                            support your pet’s overall health.
                         </p>
                     </div>
-
                     <div class="col-12 col-md-4">
-                        🐶🐱
+                        <img src="assets/pet.jpg" alt="Dog and cat food suitable for all breeds" width="80" height="80"
+                            class="rounded-pill">
                         <h6 class="fw-semibold mt-2">Suitable for All Breeds</h6>
                         <p class="text-muted small">
-                            Designed for dogs and cats of all sizes and breeds, supporting everyday wellness.
+                            Formulated for dogs and cats of all breeds and sizes, helping maintain energy, digestion,
+                            and daily wellness.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
-
     </main>
-
-    <!-- FOOTER -->
     <footer-component></footer-component>
-
-    <!-- JS -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center text-muted d-none" id="emptyCartMsg">
+                        Your cart is empty
+                    </p>
+                    <ul class="list-group" id="cartItems"></ul>
+                </div>
+                <div class="modal-footer">
+                    <strong>Total: <span id="cartTotal">$0</span></strong>
+                    <button class="btn btn-primary text-card ms-auto" id="purchaseBtn">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/food.js"></script>
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
-
 </body>
 
 </html>

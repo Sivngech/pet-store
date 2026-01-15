@@ -27,6 +27,34 @@ const foods = [
     title: 'Food',
     description: 'Dry potato pet food, it has three type to choose.',
     price: '12$'
+  },
+  {
+    id: 5,
+    img: 'assets/food/food-5.jpg',
+    title: 'Food',
+    description: 'Dry potato pet food, yummy for your pet.',
+    price: '12$'
+  },
+  {
+    id: 6,
+    img: 'assets/food/food-6.jpg',
+    title: 'Food',
+    description: 'Dry potato pet food',
+    price: '12$'
+  },
+  {
+    id: 7,
+    img: 'assets/food/food-7.jpg',
+    title: 'Food',
+    description: 'Wet dog food.',
+    price: '12$'
+  },
+  {
+    id: 8,
+    img: 'assets/food/food-8.jpg',
+    title: 'Food',
+    description: 'Wet dog food',
+    price: '12$'
   }
 ];
 
@@ -68,32 +96,60 @@ document.getElementById("dogFood").innerHTML = food;
 
 const catFoods = [
     {
-        id: 5,
+        id: 9,
         img: 'assets/cats/c-1.jpg',
         title: 'Dry food',
         description: 'Favourite food of cat',
         price: '14$'
     },
     {
-        id: 6,
+        id: 10,
         img: 'assets/cats/c-2.jpg',
         title: 'Dry food',
         description: 'Favourite food of cat',
         price: '14$'
     },
     {
-        id: 7,
+        id: 11,
         img: 'assets/cats/c-3.jpg',
         title: 'Dry food',
         description: 'Favourite food of cat',
         price: '14$'
     },
     {
-        id: 8,
+        id: 12,
         img: 'assets/cats/c-4.jpg',
         title: 'Dry food',
         description: 'Favourite food of cat',
         price: '14$'
+    },
+    {
+        id: 13,
+        img: 'assets/cats/w-1.jpg',
+        title: 'Dry food',
+        description: 'Favourite food of cat',
+        price: '13$'
+    },
+    {
+        id: 14,
+        img: 'assets/cats/w-2.jpg',
+        title: 'Wet food',
+        description: 'Favourite food of cat',
+        price: '12$'
+    },
+    {
+        id: 15,
+        img: 'assets/cats/w-3.jpg',
+        title: 'Wet food',
+        description: 'Favourite food of cat',
+        price: '10$'
+    },
+    {
+        id: 16,
+        img: 'assets/cats/w-4.jpg',
+        title: 'Wet food',
+        description: 'Favourite food of cat',
+        price: '11$'
     }
 ];
 
