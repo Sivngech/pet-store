@@ -135,28 +135,28 @@ const schnoodles = [
   {
     id: 9,
     img: 'assets/products/s-1.jpg',
-    title: 'title',
+    title: 'Schnoodle',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
     id: 10,
     img: 'assets/products/s-2.jpg',
-    title: 'title',
+    title: 'Schnoodle',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
     id: 11,
     img: 'assets/products/s-3.jpg',
-    title: 'title',
+    title: 'Schnoodle',
     description: 'Best dog in the world',
     price: '10$'
   },
   {
     id: 12,
     img: 'assets/products/s-4.jpg',
-    title: 'title',
+    title: 'Schnoodle',
     description: 'Best dog in the world',
     price: '10$'
   }
